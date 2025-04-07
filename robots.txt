@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cs-pintu-snippet.vercel.app/sitemap.xml
