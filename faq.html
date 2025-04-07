@@ -7,7 +7,12 @@
     <link rel="canonical" href="https://cs-pintu-snippet.vercel.app/faq.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="Pertanyaan umum seputar CS Pintu, WhatsApp, jam operasional, dan bantuan lainnya.">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+
+    <!-- FAQ Schema untuk rich result -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,14 +34,78 @@
       }]
     }
     </script>
+
     <style amp-custom>
-      body { font-family: Arial; margin: 20px; }
-      h1 { font-size: 24px; }
-      section { margin-bottom: 20px; }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #fff;
+        color: #333;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        background: #25D366;
+        color: #fff;
+      }
+      .menu-toggle {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+      }
+      h1 {
+        font-size: 24px;
+        margin: 16px;
+      }
+      section {
+        background: #f9f9f9;
+        padding: 16px;
+        border-left: 5px solid #25D366;
+        border-radius: 8px;
+        margin: 16px;
+      }
+      amp-sidebar ul {
+        padding: 16px;
+        list-style: none;
+      }
+      amp-sidebar li {
+        margin: 12px 0;
+      }
+      amp-sidebar a {
+        color: #25D366;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a {
+        color: #25D366;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 16px;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
-    <h1>FAQ - CS Pintu</h1>
+
+    <!-- Navigasi AMP -->
+    <header>
+      <button on="tap:sidebar1.toggle" class="menu-toggle">☰ Menu</button>
+      <h1>FAQ CS Pintu</h1>
+    </header>
+
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="tentang-pintu.html">Tentang</a></li>
+      </ul>
+    </amp-sidebar>
+
+    <!-- Konten FAQ -->
     <section>
       <h2>Apa nomor WhatsApp resmi CS Pintu?</h2>
       <p>0821-7222-6661</p>
@@ -45,6 +114,8 @@
       <h2>Jam berapa CS Pintu aktif?</h2>
       <p>Setiap hari pukul 08.00 – 22.00 WIB</p>
     </section>
-    <p><a href="index.html">Kembali ke halaman utama</a></p>
+
+    <a href="index.html">← Kembali ke halaman utama</a>
+
   </body>
 </html>
