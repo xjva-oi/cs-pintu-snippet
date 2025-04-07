@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>FAQ - CS Pintu</title>
-    <meta name="google-site-verification" content="hPVpMcydGzwfltoHaSh2QyiI8S2idqog-P64J6iVvzA" />
     <link rel="canonical" href="https://cs-pintu-snippet.vercel.app/faq.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="description" content="Pertanyaan umum seputar CS Pintu, WhatsApp, jam operasional, dan bantuan lainnya.">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
+    <meta name="google-site-verification" content="hPVpMcydGzwfltoHaSh2QyiI8S2idqog-P64J6iVvzA">
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- AMP runtime -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 
-    <!-- FAQ Schema untuk rich result -->
+    <!-- JSON-LD FAQ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,6 +37,11 @@
       }]
     }
     </script>
+
+    <!-- Meta Sosial -->
+    <meta property="og:title" content="FAQ - CS Pintu">
+    <meta property="og:description" content="Pertanyaan umum seputar CS Pintu, WhatsApp, jam operasional, dan bantuan lainnya.">
+    <meta property="og:url" content="https://cs-pintu-snippet.vercel.app/faq.html">
 
     <style amp-custom>
       body {
@@ -93,15 +101,16 @@
 
     <!-- Navigasi AMP -->
     <header>
-      <button on="tap:sidebar1.toggle" class="menu-toggle">☰ Menu</button>
+      <button on="tap:sidebar1.toggle" class="menu-toggle" aria-label="Buka Menu">☰ Menu</button>
       <h1>FAQ CS Pintu</h1>
     </header>
 
-    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+    <amp-sidebar id="sidebar1" layout="hidden" side="left">
       <ul>
         <li><a href="index.html">Beranda</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="tentang-pintu.html">Tentang</a></li>
+        <li><a href="call-center.html">Call Center</a></li>
       </ul>
     </amp-sidebar>
 
@@ -110,6 +119,7 @@
       <h2>Apa nomor WhatsApp resmi CS Pintu?</h2>
       <p>0821-7222-6661</p>
     </section>
+
     <section>
       <h2>Jam berapa CS Pintu aktif?</h2>
       <p>Setiap hari pukul 08.00 – 22.00 WIB</p>
